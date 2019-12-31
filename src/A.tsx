@@ -32,7 +32,6 @@ class A extends React.Component<{}, IState> {
     }
 
     componentDidUpdate() {
-        console.log("updated")
     }
 
     increment(n: number) {

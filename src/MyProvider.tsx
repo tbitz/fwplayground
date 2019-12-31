@@ -23,7 +23,6 @@ export class MyProvider extends Component {
                 <MyContext.Provider value={{
                     myObj: this.myObj
                 }}>
-                    {console.log(this.props.children)}
                     {this.props.children}
                 </MyContext.Provider>
                 <SecondContext.Provider value="changestring">

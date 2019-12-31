@@ -1,0 +1,6 @@
+/* module styling helps you to select the class */
+
+.success {
+    color: blueviolet;
+    font-weight: 700;
+}

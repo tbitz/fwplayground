@@ -9,10 +9,6 @@ interface IState {
 }
 
 class B extends React.Component<IProps, IState> {
-    constructor(props: any) {
-        super(props);
-    }
-
     render() {
         return (
             <div >

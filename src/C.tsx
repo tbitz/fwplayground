@@ -22,7 +22,6 @@ class C extends React.Component<IProps, IState> {
                 <MyContext.Consumer>
                     {(context) => (
                         <div>
-                            {console.log(context)}
                             <p>I'm inside the consumer {context.myObj.color}</p>
                             <span style={{ color: context.myObj.color }}>{this.props.title} - {this.props.counter} </span>
                         </div>
