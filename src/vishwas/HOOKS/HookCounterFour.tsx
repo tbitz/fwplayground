@@ -10,6 +10,8 @@ export default function HookCounterFour() {
     const [items, setItems] = useState<Array<Items>>([]);
 
     const addItem = () => {
+        const mys = [...items];
+        debugger;
         // APPEND ITEMS
         setItems([...items, { //makes a copy of using the spread operator
             id: items.length,

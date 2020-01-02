@@ -20,6 +20,7 @@ import ErrorBoundary from './vishwas/ERRORS/ErrorBoundary';
 import PostList from './vishwas/HTTP/PostList';
 import PostForm from './vishwas/HTTP/PostForm';
 import HookCounterFour from './vishwas/HOOKS/HookCounterFour';
+import { HookCounterPrev } from './vishwas/HOOKS/HookCounterPrev';
 var _ = require('lodash');
 
 const PRODUCTS = [
@@ -38,6 +39,7 @@ const App: React.FC = () => {
         App Header
       </header>
       <div>
+        <HookCounterPrev />
         <HookCounterFour />
         <PostList />
         <PostForm />
