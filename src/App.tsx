@@ -15,6 +15,11 @@ import FocusInput from './vishwas/REFS/FocusInput';
 import Input from './vishwas/REFS/Input';
 import FRParentInput from './vishwas/REFS/FRParentInput';
 import PortalsDemo from './vishwas/PORTALS/PortalsDemo';
+import { Hero } from './vishwas/ERRORS/Hero';
+import ErrorBoundary from './vishwas/ERRORS/ErrorBoundary';
+import PostList from './vishwas/HTTP/PostList';
+import PostForm from './vishwas/HTTP/PostForm';
+import HookCounterFour from './vishwas/HOOKS/HookCounterFour';
 var _ = require('lodash');
 
 const PRODUCTS = [
@@ -33,6 +38,14 @@ const App: React.FC = () => {
         App Header
       </header>
       <div>
+        <HookCounterFour />
+        <PostList />
+        <PostForm />
+        <ErrorBoundary>
+          <Hero heroName="Batman" />
+          <Hero heroName="Superman" />
+          <Hero heroName="Joker" />
+        </ErrorBoundary>
         <PortalsDemo />
         <FRParentInput />
         <FocusInput />
